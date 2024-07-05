@@ -26,6 +26,24 @@ public class TemplateMethodTest {
         abstractTemplate2.execute();
     }
 
+    @Test
+    void templateMethodV2(){
+        AbstractTemplate abstractTemplate1 = new AbstractTemplate() {
+            @Override
+            protected void call() {
+                log.info("비즈니스 로직1 실행");
+            }
+        };
+        AbstractTemplate abstractTemplate2 = new AbstractTemplate() {
+            @Override
+            protected void call() {
+                log.info("비즈니스 로직2 실행");
+            }
+        };
+        abstractTemplate1.execute();
+        abstractTemplate2.execute();
+    }
+
 
     private void logic1() {
         long startTime = System.currentTimeMillis();
@@ -42,4 +60,6 @@ public class TemplateMethodTest {
         long resultTime = endTime - startTime;
         log.info("졸료시간 = {}",resultTime);
     }
+
+
 }
