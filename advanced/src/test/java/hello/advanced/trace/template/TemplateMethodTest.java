@@ -15,6 +15,22 @@ public class TemplateMethodTest {
         logic2();
     }
 
+    private void logic1() {
+        long startTime = System.currentTimeMillis();
+        log.info("비즈니스 로직 1 실행");
+        long endTime = System.currentTimeMillis();
+        long resultTime = endTime - startTime;
+        log.info("졸료시간 = {}",resultTime);
+    }
+
+    private void logic2() {
+        long startTime = System.currentTimeMillis();
+        log.info("비즈니스 로직 2 실행");
+        long endTime = System.currentTimeMillis();
+        long resultTime = endTime - startTime;
+        log.info("졸료시간 = {}",resultTime);
+    }
+
     /**
      * 템플릿 메소드 패턴 적용
      */
@@ -45,21 +61,7 @@ public class TemplateMethodTest {
     }
 
 
-    private void logic1() {
-        long startTime = System.currentTimeMillis();
-        log.info("비즈니스 로직 1 실행");
-        long endTime = System.currentTimeMillis();
-        long resultTime = endTime - startTime;
-        log.info("졸료시간 = {}",resultTime);
-    }
 
-    private void logic2() {
-        long startTime = System.currentTimeMillis();
-        log.info("비즈니스 로직 2 실행");
-        long endTime = System.currentTimeMillis();
-        long resultTime = endTime - startTime;
-        log.info("졸료시간 = {}",resultTime);
-    }
 
 
 }
