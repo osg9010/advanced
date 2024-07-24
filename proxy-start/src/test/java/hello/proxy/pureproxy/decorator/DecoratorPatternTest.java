@@ -2,8 +2,8 @@ package hello.proxy.pureproxy.decorator;
 
 import hello.proxy.pureproxy.decorator.code.DecoratorPatternClient;
 import hello.proxy.pureproxy.decorator.code.RealComponent;
-import hello.proxy.pureproxy.proxy.code.MessageDecorator;
-import hello.proxy.pureproxy.proxy.code.TimeDecorator;
+import hello.proxy.pureproxy.decorator.code.MessageDecorator;
+import hello.proxy.pureproxy.decorator.code.TimeDecorator;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
