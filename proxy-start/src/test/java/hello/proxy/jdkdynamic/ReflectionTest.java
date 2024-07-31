@@ -44,7 +44,6 @@ public class ReflectionTest {
     void reflection2() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         // 클래스 정보
         Class classHello = Class.forName("hello.proxy.jdkdynamic.ReflectionTest$Hello");
-
         Hello target = new Hello();
         // 메서드 정보
         Method methodCallA = classHello.getMethod("callA");
