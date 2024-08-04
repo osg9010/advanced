@@ -11,6 +11,6 @@ public class ServiceImpl implements ServiceInterface{
 
     @Override
     public void find() {
-        log.info("fine 호출");
+        log.info("find 호출");
     }
 }
