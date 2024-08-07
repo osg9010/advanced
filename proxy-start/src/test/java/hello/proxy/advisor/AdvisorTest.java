@@ -44,7 +44,7 @@ public class AdvisorTest {
 
     @Test
     @DisplayName("스프링이 제공하는 포인트컷")
-   void advisorTest3(){
+    void advisorTest3(){
         ServiceInterface target = new ServiceImpl();
         ProxyFactory proxyFactory = new ProxyFactory(target);
         NameMatchMethodPointcut pointcut = new NameMatchMethodPointcut();
