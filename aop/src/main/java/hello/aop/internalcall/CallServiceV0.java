@@ -9,7 +9,7 @@ public class CallServiceV0 {
 
     public void external(){
         log.info("call external");
-        internal();
+        internal(); // 내부 메소드 호출 -> AOP 적용 안됌
     }
 
     public void internal() {
